@@ -4,7 +4,6 @@ html {
 }
 
 body {
-	/*margin-bottom: 60px;*/
 }
 
 .page-background {
@@ -17,7 +16,7 @@ body {
 }
 
 .page-content {
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 100px;
 }
 
@@ -43,6 +42,11 @@ body {
     display: inline-block;
 }
 
+#script-wars-logo-small {
+    display: inline-block;
+    width: 300px;
+}
+
 #name-input {
     margin-top: 30px;
     width: 350px;
@@ -64,4 +68,12 @@ body {
 
 .transparent {
     background-color: transparent;
+}
+
+.film-cover {
+    margin: 50px auto;
+}
+
+.film-cover img {
+    margin: 10px auto;
 }
