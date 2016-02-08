@@ -8,9 +8,7 @@
 <img src="images/angular-portugal.png" style="vertical-align: middle; width: 100px; margin: 0px; margin-right: 20px;" />
 https://github.com/AngularPortugal/script-wars
 
-
-
-
+->
 ## What is angular.js?
 - Client-side JS MVC framework
 
@@ -22,9 +20,7 @@ https://github.com/AngularPortugal/script-wars
 
 - MIT license
 
-
-
-
+->
 ## Hello Angular.JS
 ```html
 <!doctype html>
@@ -43,9 +39,7 @@ https://github.com/AngularPortugal/script-wars
 </html>
 ```
 
-
-
-
+->
 ## Version confusion
 - Versions 1.3 and later => IE 9+
 
@@ -57,16 +51,12 @@ https://github.com/AngularPortugal/script-wars
 
 - Angular 2 went beta in December 2015
 
-
-
-
+->
 ## Some numbers
 
 ![](images/angular-stats.png)
 
-
-
-
+->
 ## More numbers on GitHub
 
 #### Angular.js
@@ -77,16 +67,12 @@ https://github.com/AngularPortugal/script-wars
 
 ![](images/github-mark.png)
 
-
-
-
+->
 ## SPA Architecture
 
 ![](images/spa-architecture.png)
 
-
-
-
+->
 ## Main features
 - Complete application framework
 
@@ -104,27 +90,18 @@ https://github.com/AngularPortugal/script-wars
 
 - Testing
 
-
-
-
+->
 ![](images/feelings_about_angularjs_over_time.png)
 
-
-
-
+->
 ### links
 ------
 - https://angularjs.org/
 
-
-
-
-
+->
 # questions?
 
-
-
-
+->
 # thank you!
 
 github.com/revaristo
