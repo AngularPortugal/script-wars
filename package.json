@@ -10,7 +10,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "gulp": "^3.9.0",
     "http-server": "^0.8.5"
   }
 }
