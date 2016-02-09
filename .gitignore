@@ -34,3 +34,6 @@ node_modules
 
 # bower components folder
 bower_components
+
+# typings definition files
+typings
