@@ -1,6 +1,7 @@
 # Script Wars :: hands-on introduction to Angular.js
 --------------------------
-aprender sobre controladores, modelos, serviços, templates para fazermos uma app de votação no teu filme favorito do Star Wars em [Angular.JS 1.4](https://angularjs.org/).
+Ao longo de 2 horas vamos aprender sobre controladores, modelos, serviços, templates para fazermos uma app de votação no teu filme favorito do Star Wars em [Angular.JS 1.4](https://angularjs.org/).
+
 1.4? Sim, a força ainda não é suficientemente forte com o 2.0!
 
 
@@ -9,10 +10,10 @@ aprender sobre controladores, modelos, serviços, templates para fazermos uma ap
 - Conhecimentos de JavaScript, HTML5, CSS3
 
 Para podes acompanhar o desenvolvimento, necessitas de ter instalado:
-    - [Git](https://git-scm.com/)
-    - [Node.js](https://nodejs.org/en/)
-    - [Bower](http://bower.io/)
-    - O teu code editor favorito
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en/)
+- [Bower](http://bower.io/)
+- O teu code editor favorito
 
 Podes instalar no teu sistema ou em alternativa, criar uma máquina virtual com o Vagrant.
 
