@@ -112,14 +112,21 @@ Vagrant.configure(2) do |config|
     # install git
     sudo apt-get install -y git
 
-
     # install bower
     sudo npm install -g bower
+
+	# install eslint + plugin for angular
+	sudo npm install -g eslint
+	sudo npm install -g eslint-plugin-angular
+
+    # install typings
+    sudo npm install -g typings --no-insight
 
     # install script-wars dependencies
     cd /home/vagrant/Desktop/script-wars
     npm install
     bower install
+    typings install
 
     # change Desktop owner
     sudo chown vagrant:vagrant /home/vagrant/Desktop

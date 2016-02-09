@@ -37,3 +37,6 @@ bower_components
 
 # typings definition files
 typings
+
+# vagrant files
+.vagrant
