@@ -38,12 +38,12 @@
                     <div class="form-group">
                         <label for="name" class="h1">What's your name, young apprentice?</label>
                         <div>
-                            <input type="text" name="name" id="name-input" placeholder="tell us your name..." />
+                            <input type="text" name="name" id="name-input" placeholder="tell us your name..." ng-model="name" />
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="side" class="h2">Choose your side, <span class="apprentice-name">[apprentice name]</span></label>
+                        <label for="side" class="h2">Choose your side, <span class="apprentice-name">{{ name }}</span></label>
                         <div>
                             <div class="btn-group" data-toggle="buttons">
                                 <label class="btn btn-default" id="darkside-button">
