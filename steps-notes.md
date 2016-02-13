@@ -36,24 +36,29 @@ STEP 6: SPA architecture overview
     - Splitting page into partials with ng-include
     - Choosing what to show with ng-show
     - Events with $broadcast/$emit/$on
-	- ng-router/ui-router
-        $ bower install angular-ui-router
 
 STEP 7: Routes and Partial Views
+	- ng-router/ui-router
+        $ bower install angular-ui-router
+        $ bower install angular-animate#~1.4.9 (for animations)
 	- adding a view container
     - routes configuration
     - $state.go
+    - ui-sref
 
-STEP 8: Repeating things
-    - ng-repeat
-
-STEP 9: Application services
+STEP 8: Application services
     - thin your controllers
     - service -> factory -> provider
     - all providers are singletons
     - factories are great for revealing module pattern
 
+STEP 9: App internal state
+    - SignInService
+    - manage signin data
+
 STEP 10: Reaching out to the world
     - the $http service
     - getting data from a rest service
     - promises.then() chaining
+    - Repeating things with ng-repeat
+
