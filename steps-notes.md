@@ -69,3 +69,10 @@ STEP 11: Advanced promises
 STEP 12: Another bootstrap directive
     - showing a bootstrap modal
 
+STEP 13: Giving back to the world
+    - Posting your vote
+    - Handling errors with promises
+
+STEP 14: Showing the results
+    - using resolve on routes
+    - using $interval as poorman's real-time
