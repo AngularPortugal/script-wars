@@ -4,8 +4,8 @@
     angular.module('scriptWarsApp')
         .factory('FilmsService', FilmsService);
 
-    FilmsService.$inject = ['$http', '_'];
-    function FilmsService($http, _) {
+    FilmsService.$inject = ['$http', '$q', '_'];
+    function FilmsService($http, $q, _) {
 
         var service = {
             getFilms: getFilms
@@ -17,19 +17,29 @@
             return $http.get('http://swapi.co/api/films/')
                 .then(function (res) {
 
-                    // TODO: get film cover
-                    var films = _.map(res.data.results, function (film) {
-                        return {
-                            title: film.title,
-                            plot: film.opening_crawl,
-                            director: film.director,
-                            releaseYear: film.release_date.substring(0, 4),
-                            coverUrl: 'covers/tt0076759.jpg',
-                            url: film.url
-                        };
+                    var allFilmsPromises = _.map(res.data.results, function (film) {
+                        var releaseYear = film.release_date.substring(0, 4);
+                        return getFilmImdbId(film.title, releaseYear)
+                            .then(function (imdbDetails) {
+                                return {
+                                    title: film.title,
+                                    plot: imdbDetails.Plot,
+                                    director: film.director,
+                                    releaseYear: releaseYear,
+                                    coverUrl: 'covers/' + imdbDetails.imdbID + '.jpg',
+                                    url: film.url
+                                };
+                            });
                     });
 
-                    return films;
+                    return $q.all(allFilmsPromises);
+                });
+        }
+
+        function getFilmImdbId(filmName, filmYear) {
+            return $http.get('http://www.omdbapi.com/?t=' + filmName + '&y=' + filmYear + '&plot=short&r=json')
+                .then(function (res) {
+                    return res.data;
                 });
         }
     }
