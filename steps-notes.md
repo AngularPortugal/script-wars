@@ -45,20 +45,27 @@ STEP 7: Routes and Partial Views
     - routes configuration
     - $state.go
     - ui-sref
+    - state parameters
 
-STEP 8: Application services
+STEP 8: Route Parameters & Repeating things
+    - ng-style / ng-class
+    - Repeating things with ng-repeat
+
+STEP 9: Application services
     - thin your controllers
     - service -> factory -> provider
     - all providers are singletons
     - factories are great for revealing module pattern
 
-STEP 9: App internal state
-    - SignInService
-    - manage signin data
-
 STEP 10: Reaching out to the world
     - the $http service
     - getting data from a rest service
     - promises.then() chaining
-    - Repeating things with ng-repeat
+
+STEP 11: Advanced promises
+    - $q service
+    - $q.all
+
+STEP 12: Another bootstrap directive
+    - showing a bootstrap modal
 
