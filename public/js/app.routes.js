@@ -23,6 +23,16 @@
                 templateUrl: 'partials/films.partial.html',
                 controller: 'FilmsController',
                 controllerAs: 'vm'
+            })
+            .state('results', {
+                url: '/results',
+                params: {
+                    name: '',
+                    side: ''
+                },
+                templateUrl: 'partials/results.partial.html',
+                controller: 'ResultsController',
+                controllerAs: 'vm'
             });
 
         $urlRouterProvider.otherwise('/');
