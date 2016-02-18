@@ -1,22 +1,88 @@
 <!doctype html>
-<html lang="en" ng-app="scriptWarsApp">
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/app.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <script src="../bower_components/angular/angular.js"></script>
-  <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/cyborg.bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body>
+    <div class="page-background" style="background-image: url(assets/home-bg.jpg);">
 
-	<div class="container h1 text-center" ng-controller="MainController as vm">
-		{{ vm.title}}
-	</div>
+        <nav class="navbar navbar-default tech-logos">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img alt="Angular JS" src="assets/angular-icon.png" />
+                    <img alt="Javascript" src="assets/js-icon.png" />
+                    <img alt="Bootstrap" src="assets/bootstrap-icon.png" />
+                    <img alt="HTML 5" src="assets/html5-icon.png" />
+                    <img alt="CSS 3" src="assets/css3-icon.png" />
+                </div>
+            </div>
+        </nav>
 
-  <div class="view-container">
-    <div ng-view class="view-frame"></div>
-  </div>
+        <div class="container page-content">
 
+            <div class="text-center">
+                <img id="script-wars-logo" src="assets/script-wars-logo.png" class="img-responsive" />
+            </div>
+
+            <div class="text-center">
+                <form name="nameForm" action="list.html">
+                    <div class="form-group">
+                        <label for="name" class="h1">What's your name, young apprentice?</label>
+                        <div>
+                            <input type="text" name="name" id="name-input" placeholder="tell us your name..." />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="side" class="h2">Choose your side, <span class="apprentice-name">[apprentice name]</span></label>
+                        <div>
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-default" id="darkside-button">
+                                    <input type="radio" name="side" id="darkside" autocomplete="off"><img src="assets/dark-side-btn.png" />
+                                </label>
+                                <label class="btn btn-default" id="lightside-button">
+                                    <input type="radio" name="side" id="lightside" autocomplete="off"><img src="assets/light-side-btn.png" />
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn transparent">
+                        <img src="assets/next-icon.png" />
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Script Wars :: hands-on introduction to Angular.js</p>
+
+            <div class="github-links">
+                <!-- Place this tag where you want the button to render. -->
+                <a aria-label="Follow @AngularPortugal on GitHub" data-count-aria-label="# followers on GitHub" data-count-api="/users/AngularPortugal#followers"
+                    data-count-href="/AngularPortugal/followers" href="https://github.com/AngularPortugal" class="github-button">Follow @AngularPortugal</a>
+
+                <!-- Place this tag where you want the button to render. -->
+                <a aria-label="Star AngularPortugal/script-wars on GitHub" data-count-aria-label="# stargazers on GitHub" data-count-api="/repos/AngularPortugal/script-wars#stargazers_count"
+                    data-count-href="/AngularPortugal/script-wars/stargazers" data-icon="octicon-star" href="https://github.com/AngularPortugal/script-wars" class="github-button">Star</a>
+
+                <!-- Place this tag right after the last button or just before your close body tag. -->
+                <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+
 </html>
