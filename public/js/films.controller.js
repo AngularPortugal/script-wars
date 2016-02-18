@@ -36,7 +36,8 @@
                     // register film vote
                     VotingService.vote(film)
                         .then(function () {
-                            // TODO: navigate to results view
+                            // navigate to results view
+                            $state.go('results', { name: vm.name, side: vm.selectedSide });
                         })
                         .catch(function (err) {
                             $window.alert('Error occured registering your vote!');
