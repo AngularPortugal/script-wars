@@ -4,8 +4,8 @@
     angular.module('scriptWarsApp')
         .controller('FilmsController', FilmsController);
 
-    FilmsController.$inject = ['$state', '$stateParams', 'FilmsService', '_', '$uibModal'];
-    function FilmsController($state, $stateParams, FilmsService, _, $uibModal) {
+    FilmsController.$inject = ['$state', '$stateParams', '$window', 'FilmsService', 'VotingService', '_', '$uibModal'];
+    function FilmsController($state, $stateParams, $window, FilmsService, VotingService, _, $uibModal) {
         var vm = this;
 
         vm.name = $stateParams.name;
@@ -33,7 +33,14 @@
 
             detailsModal.result
                 .then(function (film) {
-                    // TODO: register film vote
+                    // register film vote
+                    VotingService.vote(film)
+                        .then(function () {
+                            // TODO: navigate to results view
+                        })
+                        .catch(function (err) {
+                            $window.alert('Error occured registering your vote!');
+                        });
                 });
         };
     }
