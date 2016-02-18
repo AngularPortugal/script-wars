@@ -11,7 +11,7 @@
             <h1>What's your favourite movie?</h1>
 
             <div class="row">
-                <a href="" ng-repeat="film in vm.films">
+                <a href="" ng-click="vm.showFilmDetails(film)" ng-repeat="film in vm.films">
                     <div class="col-sm-6 col-md-4 film-cover">
                         <h4><label class="label label-default">{{ ::film.releaseYear }}</label></h4>
                         <img class="img-responsive" title="{{ ::film.title }}" ng-src="{{ ::film.coverUrl }}" />
