@@ -16,10 +16,7 @@
 
     <div ng-include="'partials/header.partial.html'"></div>
 
-    <div ng-controller="MainController as main">
-        <div ng-include="'partials/home.partial.html'" ng-show="main.currentView === 'home'"></div>
-        <div ng-include="'partials/list.partial.html'" ng-show="main.currentView === 'list'"></div>
-    </div>
+    <div ui-view></div>
 
     <div ng-include="'partials/footer.partial.html'"></div>
 
@@ -28,7 +25,7 @@
     <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/main.controller.js"></script>
+    <script src="js/app.routes.js"></script>
     <script src="js/signup.controller.js"></script>
 </body>
 
