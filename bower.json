@@ -1,7 +1,6 @@
 {
   "name": "script-wars",
-  "authors": [
-  ],
+  "authors": [],
   "description": "",
   "main": "",
   "moduleType": [],
@@ -16,6 +15,7 @@
   ],
   "dependencies": {
     "angular": "~1.4.9",
-    "bootstrap": "~3.3.6"
+    "bootstrap": "~3.3.6",
+    "angular-bootstrap": "^1.1.2"
   }
 }
