@@ -27,9 +27,10 @@
         var vm = this;
 
         vm.name = '';
+        vm.selectedSide = null;
 
         vm.submit = function () {
-            $window.alert('Processing registration data for ' + vm.name + '...');
+            $window.alert('Processing registration data for ' + vm.name + '...\nWelcome to the ' + vm.selectedSide + ' side!');
             $window.location.href = 'list.html';
         };
     }
