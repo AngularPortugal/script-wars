@@ -9,6 +9,10 @@
         var vm = this;
 
         vm.currentView = 'home';
+
+        $rootScope.$on('app.view.change', function (event, args) {
+            vm.currentView = args.view;
+        });
     }
 
 })();
