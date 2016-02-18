@@ -2,6 +2,8 @@
     'use strict';
 
     angular
-        .module('scriptWarsApp', []);
+        .module('scriptWarsApp', [
+            'ui.bootstrap'
+        ]);
 
 })();
