@@ -16,7 +16,13 @@
             })
             .state('list', {
                 url: '/list',
-                templateUrl: 'partials/films.partial.html'
+                params: {
+                    name: '',
+                    side: ''
+                },
+                templateUrl: 'partials/films.partial.html',
+                controller: 'FilmsController',
+                controllerAs: 'vm'
             });
 
         $urlRouterProvider.otherwise('/');
