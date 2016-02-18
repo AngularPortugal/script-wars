@@ -1,4 +1,4 @@
-<div class="page-background" style="background-image: url(assets/dark-side-bg.jpg);">
+<div class="page-background" ng-style="{ 'background-image': 'url(assets/' + vm.selectedSide + '-side-bg.jpg)' }">
     <div class="container page-content">
 
         <div class="text-center">
@@ -11,46 +11,10 @@
             <h1>What's your favourite movie?</h1>
 
             <div class="row">
-                <a href="">
+                <a href="" ng-repeat="film in vm.films">
                     <div class="col-sm-6 col-md-4 film-cover">
-                        <h4><label class="label label-default">1979</label></h4>
-                        <img class="img-responsive" src="covers/tt0076759.jpg" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="col-sm-6 col-md-4 film-cover">
-                        <h4><label class="label label-default">1980</label></h4>
-                        <img class="img-responsive" src="covers/tt0080684.jpg" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="col-sm-6 col-md-4 film-cover">
-                        <h4><label class="label label-default">1983</label></h4>
-                        <img class="img-responsive" src="covers/tt2301123.jpg" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="col-sm-6 col-md-4 film-cover">
-                        <h4><label class="label label-default">1983</label></h4>
-                        <img class="img-responsive" src="covers/tt0120915.jpg" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="col-sm-6 col-md-4 film-cover">
-                        <h4><label class="label label-default">1983</label></h4>
-                        <img class="img-responsive" src="covers/tt0121765.jpg" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="col-sm-6 col-md-4 film-cover">
-                        <h4><label class="label label-default">1983</label></h4>
-                        <img class="img-responsive" src="covers/tt0121766.jpg" />
-                    </div>
-                </a>
-                <a href="">
-                    <div class="col-sm-6 col-md-4 film-cover">
-                        <h4><label class="label label-default">1983</label></h4>
-                        <img class="img-responsive" src="covers/tt2488496.jpg" />
+                        <h4><label class="label label-default">{{ ::film.releaseYear }}</label></h4>
+                        <img class="img-responsive" title="{{ ::film.title }}" ng-src="{{ ::film.coverUrl }}" />
                     </div>
                 </a>
             </div>
