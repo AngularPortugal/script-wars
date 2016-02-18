@@ -76,3 +76,4 @@ STEP 13: Giving back to the world
 STEP 14: Showing the results
     - using resolve on routes
     - using $interval as poorman's real-time
+    - clean up your event handlers
