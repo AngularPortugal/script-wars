@@ -22,8 +22,8 @@
     angular.module('scriptWarsApp')
         .controller('SignUpController', SignUpController);
 
-    SignUpController.$inject = ['$window', '$rootScope'];
-    function SignUpController($window, $rootScope) {
+    SignUpController.$inject = ['$window', '$state'];
+    function SignUpController($window, $state) {
         var vm = this;
 
         vm.name = '';
@@ -32,7 +32,7 @@
         vm.submit = function () {
             $window.alert('Processing registration data for ' + vm.name + '...\nWelcome to the ' + vm.selectedSide + ' side!');
 
-            $rootScope.$emit('app.view.change', { view: 'list' });
+            $state.go('list');
         };
     }
 
