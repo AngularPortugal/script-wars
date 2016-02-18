@@ -27,12 +27,16 @@
         var vm = this;
 
         vm.name = '';
-        vm.selectedSide = null;
+        vm.selectedSide = '';
 
         vm.submit = function () {
-            $window.alert('Processing registration data for ' + vm.name + '...\nWelcome to the ' + vm.selectedSide + ' side!');
-
-            $state.go('list');
+            if (vm.name !== '' && vm.selectedSide !== '') {
+                $window.alert('Processing registration data for ' + vm.name + '...\nWelcome to the ' + vm.selectedSide + ' side!');
+                $state.go('list', { name: vm.name, side: vm.selectedSide });
+            }
+            else {
+                $window.alert('Please fill in your name and side!');
+            }
         };
     }
 
