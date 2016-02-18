@@ -1,0 +1,24 @@
+<div class="modal-header">
+    <h3 class="modal-title">{{ ::vm.film.title }} <small>{{ ::vm.film.releaseYear }}</small></h3>
+</div>
+<div class="modal-body row">
+    <div class="col-md-5">
+        <img class="img-responsive" ng-src="{{ ::vm.film.coverUrl }}" />
+    </div>
+    <div class="col-md-7">
+        <div class="form">
+            <div class="form-group">
+                <label for="director">Director</label>
+                <h4>{{ ::vm.film.director }}</h4>
+            </div>
+            <div class="form-group">
+                <label for="plot">Plot</label>
+                <h5>{{ ::vm.film.plot }}</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-success" type="button" ng-click="vm.vote()">Vote</button>
+    <button class="btn btn-default" type="button" ng-click="vm.close()">Close</button>
+</div>
