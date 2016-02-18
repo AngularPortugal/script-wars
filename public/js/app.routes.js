@@ -32,7 +32,12 @@
                 },
                 templateUrl: 'partials/results.partial.html',
                 controller: 'ResultsController',
-                controllerAs: 'vm'
+                controllerAs: 'vm',
+                resolve: {
+                    results: ['VotingService', function (VotingService) {
+                        return VotingService.getResults();
+                    }]
+                }
             });
 
         $urlRouterProvider.otherwise('/');

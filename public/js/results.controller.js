@@ -4,16 +4,16 @@
     angular.module('scriptWarsApp')
         .controller('ResultsController', ResultsController);
 
-    ResultsController.$inject = ['$scope', '$state', '$stateParams', '$interval', 'VotingService'];
-    function ResultsController($scope, $state, $stateParams, $interval, VotingService) {
+    ResultsController.$inject = ['$scope', '$state', '$stateParams', '$interval', 'VotingService', 'results'];
+    function ResultsController($scope, $state, $stateParams, $interval, VotingService, results) {
         var vm = this;
 
         vm.name = $stateParams.name;
         vm.selectedSide = $stateParams.side;
 
-        updateResults();
+        displayMostVoted(results);
 
-        var updateInterval = $interval(updateResults, 5000);
+        var updateInterval = $interval(updateResults, 2000);
 
         $scope.$on('$destroy', function () {
             $interval.cancel(updateInterval);
