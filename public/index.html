@@ -34,16 +34,16 @@
             </div>
 
             <div class="text-center">
-                <form name="nameForm" action="list.html">
+                <form name="nameForm" ng-controller="SignUpController as vm" ng-submit="vm.submit()">
                     <div class="form-group">
                         <label for="name" class="h1">What's your name, young apprentice?</label>
                         <div>
-                            <input type="text" name="name" id="name-input" placeholder="tell us your name..." ng-model="name" />
+                            <input type="text" name="name" id="name-input" placeholder="tell us your name..." ng-model="vm.name" />
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="side" class="h2">Choose your side, <span class="apprentice-name">{{ name }}</span></label>
+                        <label for="side" class="h2">Choose your side, <span class="apprentice-name">{{ vm.name }}</span></label>
                         <div>
                             <div class="btn-group" data-toggle="buttons">
                                 <label class="btn btn-default" id="darkside-button">
@@ -85,6 +85,7 @@
     <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="../bower_components/angular/angular.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/signup.controller.js"></script>
 </body>
 
 </html>
