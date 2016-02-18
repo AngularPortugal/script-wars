@@ -1,4 +1,4 @@
-# Script Wars :: hands-on introduction to Angular.js
+# [Script Wars :: hands-on introduction to Angular.js](http://script-wars.herokuapp.com/#/)
 --------------------------
 Ao longo de 2 horas vamos aprender sobre controladores, modelos, serviços, templates para fazermos uma app de votação no teu filme favorito do Star Wars em [Angular.JS 1.4](https://angularjs.org/).
 
