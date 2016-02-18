@@ -22,6 +22,7 @@
                         return getFilmImdbId(film.title, releaseYear)
                             .then(function (imdbDetails) {
                                 return {
+                                    id: imdbDetails.imdbID,
                                     title: film.title,
                                     plot: imdbDetails.Plot,
                                     director: film.director,
