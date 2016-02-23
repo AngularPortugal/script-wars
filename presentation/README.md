@@ -21,6 +21,25 @@ https://github.com/AngularPortugal/script-wars
 - MIT license
 
 ->
+## Why use MVC
+- Team specialization
+
+- Quick changes
+
+- Reusable API
+
+->
+## Why Angular
+- Quick prototyping
+
+- Strong split between markup and controlers (Designer JS free)
+
+- Reusable components
+
+- "Templification" using HTML parts
+
+
+->
 ## Hello Angular.JS
 ```html
 <!doctype html>
