@@ -27,10 +27,61 @@ Podes instalar no teu sistema ou em alternativa, criar uma máquina virtual com 
 
 ## Instruções para criação da máquina virtual com o Vagrant:
 --------------------------
-- instalar o Virtual Box a partir de https://www.virtualbox.org/
-- instalar o Vagrant a partir de https://www.vagrantup.com/
-- clonar o repositório a partir de https://github.com/AngularPortugal/script-wars.git
-- abrir uma linha de comandos na pasta do projeto
-- executar 'vagrant up'
-- esperar que a máquina virtual seja inicializada
-- o login é feito com o user 'vagrant' e password 'vagrant'
+AngularPortugal
+
+Instruções para criação da máquina virtual com o Vagrant em ambientes Microsoft Windows 
+
+Primeiro é necessário instalar o seguinte software:
+
+1 - Instalar o Oracle Virtual Box (https://www.virtualbox.org/wiki/Downloads)
+2 - Instalar o Vangrad Universal  (https://www.vagrantup.com/downloads.html)
+
+
+
+Apos a instalação incei o navegador de internet e introduza o seguinte endereço: https://github.com/AngularPortugal/script-wars/tree/workshop-steps .
+Faça download para o local que pretende trabalhar por exemplo 'c:\temp2'.
+Com o download completo extraia o ficheiro zip.
+
+Inicie uma janela de linha de comandos e navegue para a pasta onde extraiu o zip. Ex. 'cd \temp2\script-wars-workshop-steps'.
+
+Para criar automaticamente a máquina virtual digite o seguinte comando 'vagrant up' a máquina virtual vai iniciar automaticamente.
+Os dados de acesso são:
+
+ Utilizadr: vagrant
+ Palavra passe: vagrant
+
+
+Com a máquina virtual inciada é necessário instalar o seguinte:
+ 
+GIT, firefox , bowere e nodejs insira os seguintes comandos não insira o '$': 
+$ sudo apt-get update
+$ sudo apt-get install git firefox 
+$ sudo apt-get install libgconf-2-4 libnss3 libnss3-dev
+$ sudo apt-get install node nodejs
+$ sudo apt-get install wget unzip
+
+
+
+Iniciar o workshop num local temporário
+
+$ cd /tmp
+$ wget https://github.com/AngularPortugal/script-wars/archive/workshop-steps.zip
+$ unzip workshop-steps.zip
+$ cd  cd script-wars-workshop-steps
+$ sudo npm install -g bower
+$ bower install jquery
+$ bower install angular-bootstrap
+$ bower install angular-animate
+$ bower install lodash
+$ sudo npm install angular
+$ sudo npm install angular-animate
+$ sudo npm install angular-bootstrap
+$ sudo npm install nodejs
+$ sudo npm install bootstrap
+
+
+$ sudo npm-install
+$ sudo npm start
+
+Inicie o firefox e introduza o seguinte endereço: http://127.0.0.1:8080/
+

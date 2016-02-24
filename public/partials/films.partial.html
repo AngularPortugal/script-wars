@@ -1,0 +1,23 @@
+<div class="page-background" ng-style="{ 'background-image': 'url(assets/' + vm.selectedSide + '-side-bg.jpg)' }">
+    <div class="container page-content">
+
+        <div class="text-center">
+            <a ui-sref="home">
+                <img id="script-wars-logo-small" src="assets/script-wars-logo.png" class="img-responsive" />
+            </a>
+        </div>
+
+        <div class="text-center">
+            <h1>What's your favourite movie?</h1>
+
+            <div class="row">
+                <a href="" ng-click="vm.showFilmDetails(film)" ng-repeat="film in vm.films">
+                    <div class="col-sm-6 col-md-4 film-cover">
+                        <h4><label class="label label-default">{{ ::film.releaseYear }}</label></h4>
+                        <img class="img-responsive" title="{{ ::film.title }}" ng-src="{{ ::film.coverUrl }}" />
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

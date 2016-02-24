@@ -1,8 +1,12 @@
-var app = angular
-	.module('scriptWarsApp', []);
+(function () {
+    'use strict';
 
-app.controller('MainController', function ($http) {
-	var vm = this;
+    angular
+        .module('scriptWarsApp', [
+            'ui.router',
+            'ngAnimate',
+            'ui.bootstrap'
+        ])
+        .constant('_', _);
 
-	vm.title = 'Script Wars';
-});
+})();
